@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;  
+            background-color: rgba(80, 10, 48, 0.701);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(155, 155, 230);
+            font-size: 1.0rem;
+        }
+
+        .left {
+            font-size: 2rem;
+            font-family: 'Lucida Handwriting';
+            text-transform: uppercase;
+        }
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 2rem;
+        }
+
+        .rightSection img {
+            width: 80%;
+            margin: 20px 0;
+        }
+        img{
+            opacity: 70%;
+        }
+        .Second {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 10px 0;
+        }
+        .whole{
+            font-family: 'Courier New';
+            font-size: large;
+        }
+        .Third {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 0px 0;
+        }
+        #element{
+            color:aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left"><b>About Me</b></div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="certificate.html">Certifications</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, <br>Welcome to About me :)
+            </div>
+            <div class="rightSection">
+                <img src="my_pic.jpg" alt="">
+            </div>
+
+        </section>
+
+        <section class="Second">
+            <div class="whole">
+                <div><b>My name is Arjita Sarkar.</b></div><br>
+            </div>
+        </section>
+
+        <section class="Third">
+            <div class="whole">
+                <div><span id="element"></span></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element',{
+            strings:['I am an undergraduate, currently pursuing my Bachelors of Technology in Computer Science Engineering.', 
+                'My interests lies in Coding and learning new technologies.',
+                'Talking about my hobbies, I like to draw cartoons in my free time and gardening seems very fascinating to me.'], typeSpeed:70,
+        });
+    </script>
+</body>
+</html>
