@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>certificate</title>
+    <title>Achievements</title>
     <style>
         * {
             margin: 0;
@@ -20,7 +21,7 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
-            height: 70px;  
+            height: 70px;
             background-color: rgba(80, 10, 48, 0.701);
         }
 
@@ -50,23 +51,160 @@
             text-transform: uppercase;
         }
 
+        .first {
+            max-width: 80vw;
+            margin: auto;
+            height: 50%;
+        }
+
+        .first h1 {
+            font-size: 2rem;
+        }
+
+        .textgrey {
+            color: gray;
+        }
+
+        .first .box {
+            background: white;
+            width: 80vw;
+            height: 5px;
+            margin: 50px 0;
+            display: flex;
+        }
+
+        .first .vertical {
+            height: 90px;
+            width: 1px;
+            background-color: white;
+            margin: 0 85px;
+        }
+
+        .image_top {
+            width: 23px;
+            position: relative;
+            top: -32;
+            left: -9px;
+        }
+
+        .vertical_text {
+            position: relative;
+            top: 75px;
+            width: 150px;
+            color: #e78faf;
+        }
+        .second {
+            max-width: 80vw;
+            margin-top: 15%;
+            margin-left: auto;
+            margin-right: auto;
+            height: 30%;
+        }
+
+        .second .box {
+            background: white;
+            width: 80vw;
+            height: 5px;
+            margin: 50px 0;
+            display: flex;
+        }
+
+        .second .vertical {
+            height: 90px;
+            width: 1px;
+            background-color: white;
+            margin: 0 85px;
+        }
     </style>
 </head>
+
 <body>
     <header>
         <nav>
-            <div class="left"><b>Certificates.</b></div>
+            <div class="left"><b>Achievements.</b></div>
             <div class="right">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="project.html">Projects</a></li>
-                    <li><a href="certificate.html">Certifications</a></li>
+                    <li><a href="certificate.html">Achievements</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
 
         </nav>
     </header>
+    <main>
+        <br>
+        <br>
+        <section class="first">
+            <span class="textgrey">What I have done so far</span>
+            <h1>Achievements & Certifications</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <div class="vertical_text">
+                        IBM: Artificial Intelligence Fundamentals<br>(July 2024)
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical_text">
+                        IBM: Project Management Fundamentals<br>(July 2024)
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical_text">
+                        Cisco: CyberSecurity Essentials<br>(Oct 2023)
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical_text">
+                        Cisco: Introduction to CyberSecurity<br>(Nov 2022)
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical_text">
+                        Cisco: Programming in C<br>(Oct 2022)
+
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <div class="vertical_text">
+                        AWS Academy: Cloud Foundations<br>(March 2024)
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="second">
+            <div class="box">
+                <div class="vertical">
+                    <div class="vertical_text">
+                        Leetcode: 100+ days<br>(July 2024)
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical_text">
+                        Codechef: 150+ days<br>(July 2024)
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical_text">
+                        Scaler: 150+ days of 365_days_code<br>(2024)
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical_text">
+                        Google Cloud: Arcade Program <br>(2022-2023)
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
 </body>
+
 </html>
