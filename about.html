@@ -87,8 +87,18 @@
             align-items: center;
             margin: 0px 0;
         }
+        .Fourth {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 7px 0;
+        }
         #element{
             color:aqua;
+        }
+        #element1{
+            color:rgb(155, 117, 54);
+            font-family: cursive;
         }
 
     </style>
@@ -132,15 +142,27 @@
                 <div><span id="element"></span></div>
             </div>
         </section>
+
+        <section class="Fourth"></section>
+            <div class="whole">
+                <div><span id="element1">
+                   <center>With a focus on continuous learning, I am enthusiastic about emerging technologies and the role they play in shaping the future.
+                    <br>I look forward to applying my skills and passion to innovative projects, internships, or research opportunities that allow me to expand my expertise and make meaningful contributions to the tech industry.                    
+                   </center>
+                </span></div>
+            </div>
+        </section>
     </main>
 
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element',{
-            strings:['I am an undergraduate, currently pursuing my Bachelors of Technology in Computer Science Engineering.', 
-                'My interests lies in Coding and learning new technologies.',
-                'Talking about my hobbies, I like to draw cartoons in my free time and gardening seems very fascinating to me.'], typeSpeed:70,
+            strings:['I am a passionate Computer Science student with a strong foundation in both theoretical and practical aspects of the field.', 
+            'I am particularly interested in areas such as software development, algorithms, databases and networking.',
+            'Throughout my academic journey, I have strengthened my problem-solving skills and ability to work with a range of programming languages including Java, C and C++',
+        'In addition to coursework, I have been involved in extracurricular activities, including hackathons, coding competitions'], typeSpeed:70,
         });
     </script>
+
 </body>
 </html>
