@@ -87,11 +87,11 @@
             align-items: center;
             margin: 0px 0;
         }
-        .Fourth {
+        .Five {
             display: flex;
             justify-content: space-around;
             align-items: center;
-            margin: 7px 0;
+            margin: 30px 20px;
         }
         #element{
             color:aqua;
@@ -143,7 +143,7 @@
             </div>
         </section>
 
-        <section class="Fourth"></section>
+       
             <div class="whole">
                 <div><span id="element1">
                    <center>With a focus on continuous learning, I am enthusiastic about emerging technologies and the role they play in shaping the future.
@@ -151,7 +151,7 @@
                    </center>
                 </span></div>
             </div>
-        </section>
+        
     </main>
 
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
@@ -163,6 +163,21 @@
         'In addition to coursework, I have been involved in extracurricular activities, including hackathons, coding competitions'], typeSpeed:70,
         });
     </script>
+    <section class="Five">
+        <h1>Visits</h1>
+  <p><span id="visitCount">0</span></p>
+        <script>
+            let visitCount = localStorage.getItem('visitCount');
+        
+            if (!visitCount) {
+              visitCount = 0;
+            }
+
+            visitCount++;
+            localStorage.setItem('visitCount', visitCount);
+            document.getElementById('visitCount').innerText = visitCount;
+          </script>
+    </section>
 
 </body>
 </html>
