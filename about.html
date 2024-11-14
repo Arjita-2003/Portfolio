@@ -87,12 +87,7 @@
             align-items: center;
             margin: 0px 0;
         }
-        .Five {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin: 30px 20px;
-        }
+        
         #element{
             color:aqua;
         }
@@ -163,21 +158,6 @@
         'In addition to coursework, I have been involved in extracurricular activities, including hackathons, coding competitions'], typeSpeed:70,
         });
     </script>
-    <section class="Five">
-        <h1>Visits</h1>
-  <p><span id="visitCount">0</span></p>
-        <script>
-            let visitCount = localStorage.getItem('visitCount');
-        
-            if (!visitCount) {
-              visitCount = 0;
-            }
-
-            visitCount++;
-            localStorage.setItem('visitCount', visitCount);
-            document.getElementById('visitCount').innerText = visitCount;
-          </script>
-    </section>
-
+    
 </body>
 </html>
